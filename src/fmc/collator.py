@@ -21,16 +21,19 @@ class Collator:
         index: Dict[str, dict] = defaultdict(lambda: {"count": 0, "uids": [], "examples": []})
 
         with self.client.connect():
-            for i, uid in enumerate(self.client.iter_message_uids()):
-                if limit is not None and i >= limit:
-                    break
-                headers = self.client.fetch_headers(uid)
-                sender = headers.get("From", "")
-                subj = headers.get("Subject", "")
-                date = headers.get("Date", "")
+            for uid, headers in self.client.fetch_headers_stream(
+                header_names=("FROM", "SUBJECT", "DATE"),
+                limit=limit,
+                chunk_size=300,
+            ):
+                sender = headers.get("From", "") or ""
+                subj = headers.get("Subject", "") or ""
+                date = headers.get("Date", "") or ""
+
                 bucket = index[sender]
                 bucket["count"] += 1
                 bucket["uids"].append(uid)
                 if len(bucket["examples"]) < 3:
                     bucket["examples"].append({"subject": subj, "date": date})
+
         return dict(index)
