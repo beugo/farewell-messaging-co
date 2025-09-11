@@ -1,3 +1,7 @@
+# ----------------------------------
+# This is old code I'm using to build the rest of the project, not sure if I would run this stuff
+# ----------------------------------
+
 import imaplib
 import email
 from email.header import decode_header

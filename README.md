@@ -40,11 +40,26 @@ In order to get rid of your TMC email, you're going to want to:
 
 - Find out what accounts you need to switch from your old TMC email to a new email
 
-In this tutorial, I'm first going to go over how to download all of your emails and then how to use my custom-made script to filter out the junk and only save the important emails. This script will also make you a list of accounts that you need to switch over to a new email, if you haven't done so already.
+In this tutorial, I'm first going to go over how you can use my code to help you switch emails.
 
-## Step #1: Downloading your emails
+## Current status of the app
+At the moment, the app is able to give you a list of senders that you may need to transition your email away from. To get this list you need to have python installed and run the following commands:
+```bash
+python cli.py
+python group_senders.py
+```
 
-When I transitioned away from my TMC email, I first had to find a way to download all of my emails. I used Thunderbird, an email app that you can download [here](https://www.thunderbird.net/en-US/thunderbird/all/).
+This code will give you three text files, `detailed_senders.txt` (every sender with detailed info), `senders.txt` (every sender but just the origin email address) and `grouped_senders.txt` (a slimmed down and organised version of `senders.txt`)
 
-After downloading Thunderbird and signing in using your TMC email and password, you can then 
+So at this stage, you are able to find out which services and organisations you may need to switch your email with.
+
+In terms of the email sorting and saving functionality, this is still in the works, so if you're planning on closing down your email soon then you can just export and save all of your emails and the code for sorting them out will be available soon.
+
+If you're struggling to download your inbox, I recommend downloading Thunderbird on your computer, signing in and I believe if you go to settings -> synchronisation there's an option to save all of your emails locally.
+
+## Stuff to do
+- [ ] Make a GUI using Slint
+- [ ] Implement email sorting functionality
+- [ ] Make code more accessible (more comments, modular functions, no environmental variables)
+- [ ] Refine the senders list generation
 
