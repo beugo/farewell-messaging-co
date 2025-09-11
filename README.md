@@ -41,7 +41,7 @@ In order to get rid of your TMC email, you're going to want to:
 - Find out what accounts you need to switch from your old TMC email to a new email
 
 In this tutorial, I'm first going to go over how you can use my code to help you switch emails.
-## Work in progress 🔽🚧🚧🚧
+## Work in progress ⬇️⬇️🚧🚧🚧
 ## Current status of the app
 At the moment, the app is able to give you a list of senders that you may need to transition your email away from. To get this list you need to have python installed and run the following commands:
 ```bash
