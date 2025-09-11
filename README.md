@@ -41,7 +41,7 @@ In order to get rid of your TMC email, you're going to want to:
 - Find out what accounts you need to switch from your old TMC email to a new email
 
 In this tutorial, I'm first going to go over how you can use my code to help you switch emails.
-
+## Work in progress 🔽🚧🚧🚧
 ## Current status of the app
 At the moment, the app is able to give you a list of senders that you may need to transition your email away from. To get this list you need to have python installed and run the following commands:
 ```bash
@@ -56,6 +56,9 @@ So at this stage, you are able to find out which services and organisations you 
 In terms of the email sorting and saving functionality, this is still in the works, so if you're planning on closing down your email soon then you can just export and save all of your emails and the code for sorting them out will be available soon.
 
 If you're struggling to download your inbox, I recommend downloading Thunderbird on your computer, signing in and I believe if you go to settings -> synchronisation there's an option to save all of your emails locally.
+
+## If you want to contribute...
+I don't really have time to set up a whole CONTRIBUTING.md file at the moment, but the core idea of this app is that it's super accessible and friendly to non-technical users, and this is including the code as well as the frontend... there will be more to come soon about the design plan for the GUI and how the email sorter is going to work.
 
 ## Stuff to do
 - [ ] Make a GUI using Slint
