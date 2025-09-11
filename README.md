@@ -62,4 +62,6 @@ If you're struggling to download your inbox, I recommend downloading Thunderbird
 - [ ] Implement email sorting functionality
 - [ ] Make code more accessible (more comments, modular functions, no environmental variables)
 - [ ] Refine the senders list generation
+- [ ] Make the app install process easier for non-technical users (package stuff into a binary?)
+- [ ] Make an option where you don't want to enter your password you can just link to a .INBOX file
 
